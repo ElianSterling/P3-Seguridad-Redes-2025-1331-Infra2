@@ -1,0 +1,48 @@
+P3-INFRA2-IPSEC
+================
+
+Remote Gateway
+--------------
+192.168.1.82
+
+Authentication
+--------------
+Pre-shared Key: <REDACTED>
+XAuth: Prompt on login
+User: vpnuser
+Password: <REDACTED>
+
+IKE
+---
+Version: IKEv1
+Mode: Aggressive
+Address Assignment: Mode Config
+
+Phase 1
+-------
+Proposal 1: DES / SHA1
+Proposal 2: DES / MD5
+DH Groups: 5, 14
+Key Life: 86400 seconds
+Dead Peer Detection: Enabled
+NAT Traversal: Enabled
+Local LAN: Disabled
+
+Phase 2
+-------
+Proposal 1: DES / SHA1
+Proposal 2: DES / MD5
+Key Life: 43200 seconds
+Replay Detection: Enabled
+PFS: Enabled
+DH Group: 14
+
+Expected Mode Config
+--------------------
+Client IP: 10.31.60.10 - 10.31.60.20
+Split include: HOST-JUMP01 / 10.31.40.2/32
+
+Security note
+-------------
+DES and MD5 are retained only to reproduce the academic EVAL lab.
+Do not use these algorithms in production deployments.
