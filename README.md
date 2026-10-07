@@ -252,7 +252,9 @@ Las capturas del intento SSL-VPN se conservan únicamente como evidencia de trou
 
 ## Video
 
-Video de demostración: **pendiente de agregar**.
+Video de demostración de la Infraestructura 2:
+
+https://youtu.be/9j7XP9V15-M
 
 El video debe mostrar de forma resumida:
 
